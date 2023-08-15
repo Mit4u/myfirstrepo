@@ -1,10 +1,10 @@
 ---
-- hosts: all
+- name: Install Git and Clone Remote Repository
+  hosts: all
   become: true
-  task:
-    - name: Install git
-	apt:
-	  name: git
-	  state: present
-	  update_cache: yes
-		
+  tasks:
+    - name: Install Git
+      apt:
+        name: git
+        state: present
+        update_cache: yes
