@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+   - name: install multiple softwares
+     apt:
+       name: "{{item}}"
+     loop:
+       - git
+       - tree
+       - wget
