@@ -1,7 +1,7 @@
 ---
 - hosts: mywebserver
   become: yes
-  task:
+  tasks:
   - name: install java on ubantu
     apt:
      name: "{{forubantu}}"
