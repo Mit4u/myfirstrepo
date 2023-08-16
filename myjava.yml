@@ -4,11 +4,11 @@
   task:
   - name: install java on ubantu
     apt:
-     name: {"forubantu"}
+     name: {{"forubantu"}}
      state: present
     when: ansible_os_family=="Debian"
   - name: install java on linux
     yum:
-      name: {"forlinux"}
+      name: {{"forlinux"}}
       state: present
     when: ansible_os_family="RedHat" 
