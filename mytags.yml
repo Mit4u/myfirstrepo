@@ -4,19 +4,19 @@
   tasks:
   - name: install git
     apt:
-     name: git 
+     name: install git 
      state: present
      tags: git
   
   - name: install tree
     apt:
-     name: tree
+     name: install tree
      state: present
      tags: tree
 
   - name: install wget
     apt:
-     name: wget
+     name: install wget
      state: present
      tags: wget
       
