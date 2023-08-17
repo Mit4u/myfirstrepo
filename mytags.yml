@@ -4,9 +4,10 @@
   tasks:
   - name: install git
     apt:
-     name: git 
+     name: gat
      state: present
     tags: git
+    ignore_errors: yes
   
   - name: install tree
     apt:
