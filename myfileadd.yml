@@ -1,0 +1,8 @@
+---
+- host: 172.31.37.182
+  become: yes
+  tasks:
+    name: i want to create a file
+    file:
+     path: /home/ubantu/myfile
+     state: touch
